@@ -8,13 +8,11 @@ export default class Animation{
     }
 
     async start(){
-        const saucerElement = document.getElementsByClassName("saucer");
+        const saucerElement = document.getElementsByClassName("ufo");
         //const ufo = saucerElement.saucer;
-        //console.log(saucerElement);
 
         const cowElement = document.getElementsByClassName("cow");
         const cow = new Cow(cowElement.[0]);
-        //console.log(cowElement, cow);
 
         const beamTop = document.getElementById("beam-top");
         const beamBottom = document.getElementById("beam-bottom");
@@ -23,8 +21,6 @@ export default class Animation{
         
         this.saucer = saucer;
         this.cow = cow;
-        //console.log(saucer, cow);
-        
 
         await saucer.moveTo(Saucer.events.FLY_IN);
         await saucer.toggleBeam(Saucer.events.BEAM_SHOW);
