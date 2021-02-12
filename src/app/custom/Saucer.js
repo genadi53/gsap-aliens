@@ -25,8 +25,6 @@ export default class Saucer extends EventEmitter{
 
             await animation
                 .to(this._saucerElement, { id: "flyIn", x: -835, duration: 2});
-                //.to(this._beamTopElement, {x: -835, duration: 0})
-                //.to(this._beamBottomElement, {x: -835, duration: 0});
                 
             
             this.emit(Saucer.events.FLY_IN, 'fly_in');
